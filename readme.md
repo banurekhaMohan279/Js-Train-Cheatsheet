@@ -1,0 +1,3 @@
+This repository is aimed at building a comprehensive list for Javascript arrays - both built-in and commonly needed functions.
+
+[Javascript Arrays] (https://github.com/javascript-array-cheatsheet/master/array.txt)
