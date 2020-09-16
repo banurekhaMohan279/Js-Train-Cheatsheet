@@ -22,5 +22,20 @@
 |                           | arrName.length=length // truncates array               | fruits.length=2; `// ['Apple','Mosambi'];`                                                                                           |
 | Delete/Reset entire array | arrName.length=0                                       | fruits.length=0; `// []`                                                                                                             |
 |                           | arrName=[]                                             | fruits=[];                                                                                                                         |
-|                           | arrName.splice(start,arrayLength)                      | fruits.splice(0,fruits.length);                                                                                                    |{alert('Pineapple')},'Orange']                              	|
+|                           | arrName.splice(start,arrayLength)                      | fruits.splice(0,fruits.length);`                                                                                                    |{alert('Pineapple')},'Orange']                              	|
 |                               	
+
+# Array Iteration
+| Syntax                                                                                                   | Example                                                                          |
+|----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| arrName.forEach(callback[, this]) // calls a function for each array element but returns undefined       | let arr = [1,2,3]; arr.forEach(item=>console.log(item));                         |
+| arrName.map(callback[, initialvalue]) // returns a new manipulated array                                 | let arr = [1,2,3,4,5]; arr.map(item=>item*item); `//[1,4,9]`                     |
+| for(let item of arrName)                                                                                 | for(let item of [1,2,3]){console.log(item)} `// 1 2 3`                           |
+| arrName.keys() // returns a new array iterator object with array indices                                 | for(let key of arr){ console.log(key)}; `// 0 1 2`                               |
+| arrName.values() // returns a new array iterator object with array values                                | for(let value of arr.values()){console.log(value)}; `//1 2 3`                    |
+| arrName.entries() // // returns a new array iterator object with array indices and values                | for(let [index,value] of arr.entries()){console.log(index,value)}; `0 1 1 2 2 3` |
+| arrName.find(callback[, this]) // returns first value that satisfies condition                           | arr.find(item=>item>1);`//2`                                                     |
+| arrName.filter(callback[, this]) // returns an array that satisfies condition                            | arr.filter(item=>item>1);`//[2,3]`                                               |
+| arrName.every(callback[, this]) // returns true if all elements in the array satisfy the condition       | arr.some(item=>item>1);`//true`                                                  |
+| arrName.some(callback[, this]) // returns true if atleast one element in the array satisfy the condition | arr.every(item=>item>1);`//false`                                                |
+|                                                                                                          | arrName.unshift(value)// Add first element                                       |
