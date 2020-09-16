@@ -1,11 +1,12 @@
 # Array - CRUD Operations
 |                           | Syntax                                                 | Example                                                                                                                            |
 |---------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| Create                    | arrName = [] // Array literal/shorthand                | let fruits = ['Apple',{name:'Mango'},'Orange',function(){alert('Pineapple')}];                                                     |
+| Create                    | 
+|                           | arrName = [] // Array literal/shorthand                | let fruits = ['Apple',{name:'Mango'},'Orange',function(){alert('Pineapple')}];                                                     |
 |                           | arrName = new Array() // Array constructor             | let arr =  new Array();                                                                                                            |
-| Read                      | arrName[index]                                         | fruits[0];`//Apple`                                                                                                                  |
-|                           | arrName[index].objKey // Access object                 | fruits[1].name; `// Mango`                                                                                                           |
-|                           | arrName[index]() // Access Function                    | fruits[3]();`//Alerted 'Pineapple'`                                                                                                  |
+| Read                      | 
+|                            | arrName[index]                                         | fruits[0];`//Apple`                                                                                                                  |
+|                           | arrName[index].objKey // Access object                 | fruits[1].name; `// Mango`                                                                                                           |                                                                                                 |
 | Update                    |                                                        |                                                                                                                                    |
 | Replace                   | arrName[index]=value                                   | fruits[2]='Guava'; `//['Apple',{name:'Mango'},'Guava',function(){alert('Pineapple')}]`                                             |
 |                           | arrName.splice(start,end,value)                        | fruits.splice(0,1,'Mosambi'); `//['Mosambi',{name:'Mango'},'Guava',function(){alert('Pineapple')}]`                                  |
