@@ -1,18 +1,25 @@
-# Built-in functions
-## Create, Access, Modify, Delete
-### Creation
-`let arrayName = new Array();
-let arrayName = []; // common`
-
-### Access
-`arrayName[index]`
-
-### Modify
-`arrayName[index]=value`
-
-### Deletion
-#### Deleting an entire array
-`arrayName.length=0;`
-
-#### Deleting an array value
-`delete arrayName[index]`
+# Array - CRUD Operations
+|                           | Syntax                                                 | Example                                                                                                                            |
+|---------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| Create                    | arrName = [] // Array literal/shorthand                | let fruits = ['Apple',{name:'Mango'},'Orange',function(){alert('Pineapple')}];                                                     |
+|                           | arrName = new Array() // Array constructor             | let arr =  new Array();                                                                                                            |
+| Read                      | arrName[index]                                         | fruits[0];`//Apple`                                                                                                                  |
+|                           | arrName[index].objKey // Access object                 | fruits[1].name; `// Mango`                                                                                                           |
+|                           | arrName[index]() // Access Function                    | fruits[3]();`//Alerted 'Pineapple'`                                                                                                  |
+| Update                    |                                                        |                                                                                                                                    |
+| Replace                   | arrName[index]=value                                   | fruits[2]='Guava'; `//['Apple',{name:'Mango'},'Guava',function(){alert('Pineapple')}]`                                             |
+|                           | arrName.splice(start,end,value)                        | fruits.splice(0,1,'Mosambi'); `//['Mosambi',{name:'Mango'},'Guava',function(){alert('Pineapple')}]`                                  |
+| Add                       | arrName[index]=value                                   | fruits[4]='Orange'; `//['Mosambi',{name:'Mango'},'Guava',function(){alert('Pineapple')},'Orange']`                                   |
+|                           | arrName.push(value)// Add last element                 | fruits.push('Grapes'); `//['Mosambi',{name:'Mango'},'Guava',function(){alert('Pineapple')},'Orange','Grapes']`                       |
+|                           | arrName.unshift(value)// Add first element             | fruits.unshift('Banana'); `//['Banana','Mosambi',{name:'Mango'},'Guava',function(){alert('Pineapple')},'Orange','Grapes']`        |
+|                           | arrName.splice(start,0,value)// add to specific index  | fruits.splice(1,0,'Apple'); `//['Banana','Apple','Mosambi',{name:'Mango'},'Guava',function(){alert('Pineapple')},'Orange','Grapes']` |
+| Delete                    |                                                        |                                                                                                                                    |
+| Delete array elements     | delete arrName[index]                                  | delete fruits[0]; `// [empty,'Apple','Mosambi',{name:'Mango'},'Guava',function(){alert('Pineapple')},'Orange','Grapes']`             |
+|                           | arrName.pop() // delete last element                   | fruits.pop(); `// [empty,'Apple','Mosambi',{name:'Mango'},'Guava',function(){alert('Pineapple')},'Orange']`                          |
+|                           | arrName.shift() // delete first element                | fruits.shift(); `// ['Apple','Mosambi',{name:'Mango'},'Guava',function(){alert('Pineapple')},'Orange']`                              |
+|                           | arrName.splice(start,end)// delete specific element(s) | fruits.splice(4,1); `// ['Apple','Mosambi',{name:'Mango'},'Guava','Orange'] `                                                        |
+|                           | arrName.length=length // truncates array               | fruits.length=2; `// ['Apple','Mosambi'];`                                                                                           |
+| Delete/Reset entire array | arrName.length=0                                       | fruits.length=0; `// []`                                                                                                             |
+|                           | arrName=[]                                             | fruits=[];                                                                                                                         |
+|                           | arrName.splice(start,arrayLength)                      | fruits.splice(0,fruits.length);                                                                                                    |{alert('Pineapple')},'Orange']                              	|
+|                               	
