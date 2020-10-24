@@ -23,3 +23,10 @@
 |                            | Object.values(obj)                                                                                             | Object.values(obj); //`[1, 2]`                                                                         |
 |                            | Object.entries(obj)                                                                                            | Object.entries(obj); //`[[“a”,1],[“b”,2]]`                                                             |
 | Delete/Reset entire object | Garbage collector deletes object when not referenced                                                           |                                                                                                        |
+
+# Common functionalities
+| Operation                                   | Syntax/Example                                                                                                                                   |   |
+|---------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|---|
+| Count                                       | Object.keys(obj).length;                                                                                                                         |   |
+| Max of object value                         | let max=0; for(let[key,value] of Object.entries(obj)){     if(max<value) max=value; } console.log(max); // `2`                                   |   |
+| Count of same object properties in an array | Sample Input: [{x:1,y:1},{x:2,y:3},{x:4,y:4}] Sample Output: 2 obj.reduce((target,item)=>{if(item.x==item.y) target+=1; return target;},0) //`2` |   |
