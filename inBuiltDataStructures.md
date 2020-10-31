@@ -19,3 +19,20 @@
 |                         | map.keys() //returns iterable    | map.keys()//{1,2}                          |
 |                         | map.values()// returns iterable  | map.values()//{1,”two”}                    |
 |                         | map.entries()// returns iterable | map.entries()//{1 => 1, 2 => "two"}        |
+
+# Set
+## CRUD Operations
+|                      | Syntax               | Example                                       |
+|----------------------|----------------------|-----------------------------------------------|
+| Create               | Let set = new Set(); | Let set = new Set();                          |
+| Read                 |                      |                                               |
+| Update - Add/ Modify | set.add(value);      | set.add(“John”); set.add(“John”); set.size//1 |
+| Delete               | set.delete(value);   | set.delete(“John”);                           |
+|                      | set.clear();         | set.clear();                                  |
+
+## Common Operations
+|                         | Syntax           | Example                            |
+|-------------------------|------------------|------------------------------------|
+| Size                    | set.size         | set.add(1);set.add(2); set.size//2 |
+| Check if element exists | set.has(value)   | set.has(1)//true                   |
+| Iteration               | For..of, forEach |                                    |
